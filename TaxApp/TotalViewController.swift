@@ -15,10 +15,11 @@ class TotalViewController: UITableViewController {
     // 合計金額を保存する変数
     var totalAmount: Double = 0.0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // 合計金額をラベルに表示
-        totalLabel.text = String(format: "%.2f", totalAmount)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Total Amount in viewWillAppear: \(totalAmount)")  // ログ出力
+        print("Total Label: \(String(describing: totalLabel))")  // ログ出力
+        totalLabel.text = "¥" + String(format: "%.2f", totalAmount)
     }
 }
 
