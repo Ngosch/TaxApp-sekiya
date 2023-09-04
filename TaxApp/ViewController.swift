@@ -41,19 +41,17 @@ class ViewController: UITableViewController {
         }
     }
     
-    // 合計ボタンがタップされたときのアクション
-    @IBAction func totalButtonTapped(_ sender: UIButton) {
-        print("totalButtonTapped called")  // ログ追加
-        // 画面遷移を実行
-        performSegue(withIdentifier: "toTotal", sender: nil)
-    }
+//    // 合計ボタンがタップされたときのアクション
+//    @IBAction func totalButtonTapped(_ sender: UIButton) {
+//        print("totalButtonTapped called")  // ログ追加
+//        // 画面遷移を実行
+//        performSegue(withIdentifier: "toTotal", sender: nil)
+//    }
     
     // 画面遷移の前にデータを渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Destination ViewController: \(segue.destination)")  // ログ追加
         if let totalVC = segue.destination as? TotalViewController {
             totalVC.totalAmount = prices.reduce(0) { $0 + $1.price }
-            print("Total Amount in prepare: \(totalVC.totalAmount)")  // ログ出力
         }
     }
     

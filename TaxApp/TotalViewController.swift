@@ -17,8 +17,6 @@ class TotalViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("Total Amount in viewWillAppear: \(totalAmount)")  // ログ出力
-        print("Total Label: \(String(describing: totalLabel))")  // ログ出力
         totalLabel.text = "¥" + String(format: "%.2f", totalAmount)
     }
 }
