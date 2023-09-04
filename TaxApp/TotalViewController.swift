@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TotalViewController: UIViewController {
+class TotalViewController: UITableViewController {
 
     // UI要素のアウトレット接続
     @IBOutlet weak var totalLabel: UILabel!
