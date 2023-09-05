@@ -18,8 +18,8 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // セルの登録
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "PriceCell")
+//        // セルの登録
+//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "PriceCell")
     }
     
     // 原価が変更されたときのアクション
