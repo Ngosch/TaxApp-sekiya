@@ -39,7 +39,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
-                                        <action selector="priceChanged:" destination="TXY-kZ-raq" eventType="editingDidEnd" id="bmE-wA-UtT"/>
+                                        <action selector="priceChanged:" destination="TXY-kZ-raq" eventType="editingChanged" id="Baw-ky-rHn"/>
                                     </connections>
                                 </textField>
                                 <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KM8-xd-Wu2">
